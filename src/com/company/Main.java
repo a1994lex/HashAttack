@@ -28,14 +28,15 @@ public class Main {
         } catch( Exception e) {
             System.out.println("Unit Tests Failed: " + e);
         }
-        int[] testN = {8, 12, 18, 22};
+        int[] testCollision = {8, 12, 18, 22};
 
 
         // Run Collision Attacks
-//        runAttacks(testN, 0);
+        runAttacks(testCollision, 0);
 
+        int[] testPreImage = {8, 12, 18, 20};
         // Run PreImageAttacks
-        runAttacks(testN, 1);
+        runAttacks(testPreImage, 1);
 
 
     }
